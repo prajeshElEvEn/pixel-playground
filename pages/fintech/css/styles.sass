@@ -1,10 +1,246 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap')
+
+body
+    font-family: "DM Sans", sans-serif
 
 .container
     margin: 0 auto
-    width: 90%
+    width: 80%
 
-nav
-    .brand
-        img
-            width: 24px
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .brand
+            display: flex
+            align-items: center
+            gap: 0.4rem
+            img
+                width: 24px
+            span
+                font-weight: 700
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            gap: 2rem
+        .btn-group
+            display: flex
+            align-items: center
+            gap: 1rem
+
+    main
+        margin: 4rem 0
+        display: flex
+        align-items: flex-start
+        gap: 4rem
+        .left
+            width: 20%
+            display: flex
+            flex-direction: column
+            gap: 2rem
+            .text-card
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                gap: 2rem
+                font-size: 2rem
+                span
+                    font-size: 1rem
+            .credit-card
+                height: 450px
+                border-radius: 1rem
+                background: #2D54ED
+                color: #fff
+                padding: 1rem
+                display: flex
+                justify-content: space-between
+                align-items: flex-end
+                font-size: 4rem
+            .btn-card
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                border: 2px solid #000
+                border-radius: 1rem
+                padding: 3rem 0
+                font-size: 4rem
+                .btn-card-text
+                    font-size: 1rem
+                    font-weight: 600
+        .right
+            width: 80%
+            display: flex
+            flex-direction: column
+            gap: 2rem
+            .main-text
+                h1
+                    font-size: 4rem
+                    font-weight: 400
+            .cards
+                display: flex
+                align-items: flex-end
+                .card-one
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    border: 2px solid #e4e4e4
+                    padding: 1rem 4rem 2rem 1rem
+                    border-radius: 1rem
+                    background: #F4F4F5
+                .card-two
+                    display: flex
+                    flex-direction: column
+                    gap: 1rem
+                    align-items: flex-start
+                    border-radius: 1rem
+                    background: #000
+                    padding: 1rem 0 0 1rem
+                    .card-two-bottom
+                        display: flex
+                        align-items: flex-end
+                        gap: 1rem
+                        .blue-bar-one
+                            background: #2A4CDF
+                            width: 48px
+                            height: 240px
+                        .white-bar-one
+                            background: #fff
+                            width: 48px
+                            height: 200px
+                        .blue-bar-two
+                            background: #2A4CDF
+                            width: 48px
+                            height: 150px
+                        .white-bar-two
+                            background: #fff
+                            width: 48px
+                            height: 100px
+                            border-radius: 0 0 1rem 0
+                .card-three
+                    width: 50%
+                    background: #F4F4F5
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    border: 2px solid #e4e4e4
+                    border-radius: 1rem
+                    padding: 1rem
+                    gap: 1rem
+                    .card-nav
+                        display: flex
+                        align-items: center
+                        gap: 1rem
+                        p
+                            font-size: 1.2rem
+                            font-weight: 600
+                    .card-three-bottom
+                        display: flex
+                        flex-direction: column
+                        gap: 1rem
+                        width: 100%
+                        .profile-card
+                            border-radius: 1rem
+                            display: flex
+                            align-items: flex-start
+                            gap: 1rem
+                            border: 1px solid #e4e4e4
+                            padding: 1rem
+                            background: #fff
+                            .profile-details
+                                .title
+                                    font-weight: 600
+                                .status
+                                    margin-top: 1rem
+                                    color: #7c7c7c
+                .status-card
+                    padding: 1rem
+                    display: flex
+                    gap: 1rem
+                    align-items: center
+                    background: #fff
+                    border: 2px solid #e4e4e4
+                    border-radius: 1rem
+                    justify-content: space-between
+                    .bars
+                        display: flex
+                        align-items: flex-end
+                        gap: 0.4rem
+                        .bar
+                            width: 20px
+                            // height: 80px
+                            width: 14px
+                            border-radius: 1rem
+                            background: #326EFF
+                        .h-80
+                            height: 80px
+                        .h-70
+                            height: 70px
+                        .h-60
+                            height: 60px
+                        .h-50
+                            height: 50px
+                        .h-40
+                            height: 40px
+                        .h-30
+                            height: 30px
+                        .h-10
+                            height: 10px
+button
+    border: none
+    display: flex
+    align-items: center
+    font-family: "DM Sans", sans-serif
+    font-size: 1rem
+    cursor: pointer
+
+.btn-link
+    text-decoration: none
+    color: #484848
+    font-weight: 600
+    &:hover
+        color: #000
+
+.btn-ghost
+    color: #000
+    font-weight: 600
+    background: #fff
+    gap: 0.2rem
+    text-decoration: underline
+
+.btn-primary
+    background: #000
+    padding: 0.6rem 1.5rem
+    gap: 1rem
+    color: #fff
+    font-size: 2rem
+    span
+        font-size: 1rem
+
+.btn-secondary
+    background: #000
+    color: #fff
+    padding: 0.6rem 1rem
+    border-radius: 0.5rem
+
+.num
+    border-radius: 50px
+    text-align: center
+    font-weight: 600
+    font-size: 1.2rem
+    padding: 0.4rem 1rem
+
+.one
+    background: #000
+    color: #fff
+
+.two
+    background: #fff
+    padding: 0.6rem 1rem
+
+.avatar
+    border-radius: 50px
+    width: 48px
+    height: 48px
