@@ -8,27 +8,130 @@
   </head>
   <body>
     <div class="container">
-      <h1>pixel playground</h1>
-      <a>
-        showcasing frontend works, written with
-        <a href="http://" target="_blank" rel="noopener noreferrer">html</a>,
-        <a href="http://" target="_blank" rel="noopener noreferrer">sass</a>,
-        <a href="http://" target="_blank" rel="noopener noreferrer"
-          >javascript</a
-        >.
-        <p>Challenge me with your designs</p>
-        <a href="mailto:prajesh.eleven118@gmail.com" target="_blank" rel="noopener noreferrer"><button>Write to me</button></a>
-      </p>
-      <h2>Works</h2>
-      <div class="card">
-        <img src="https://cdn.dribbble.com/userupload/4629976/file/original-4c0de66d68554c49eedc4608227d92d5.png?resize=1024x768" alt="Name" />
-        <h4>Fintech</h4>
-        <p>
-          Financial Services Website by <a href="https://dribbble.com/reng1sed" target="_blank" rel="noopener noreferrer">Sam Halpert</a> on <a href="https://dribbble.com/shots/20641550-Financial-Services-Website" target="_blank" rel="noopener noreferrer">dribble</a>.
-        </p>
-        <a href="./pages/fintech/index.html">Browse</a>
-        <a href="https://github.com/prajeshElEvEn/pixel-playground/tree/master/pages/fintech">Code</a>
+      <div class="nav">
+        <h1>pixel playground</h1>
+        <div class="btn-group">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <button class="primary">
+              <i class="bi bi-github"></i>
+              <span>Github</span>
+            </button>
+          </a>
+        </div>
       </div>
+      <header>
+        <div class="title">
+          showcasing frontend works, written in
+          <a href="https://" target="_blank" rel="noopener noreferrer">html</a>,
+          <a href="https://" target="_blank" rel="noopener noreferrer">css</a>,
+          <a href="https://" target="_blank" rel="noopener noreferrer"
+            >javascript</a
+          >.
+        </div>
+        <div class="sub-title">
+          <span>challenge me with your designs @</span>
+          <a
+            href="mailto:prajesh.eleven118@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><button class="secondary">
+              <span> prajesh.eleven118@gmail.com </span>
+            </button></a
+          >
+        </div>
+      </header>
+      <main>
+        <h2>works</h2>
+        <div class="card">
+          <div class="content">
+            <img
+              src="https://cdn.dribbble.com/userupload/4629976/file/original-4c0de66d68554c49eedc4608227d92d5.png?resize=1024x768"
+              alt="Fintech"
+            />
+            <h4>Fintech</h4>
+            <p>
+              <a
+                href="https://dribbble.com/shots/20641550-Financial-Services-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Financial Services UI</a
+              >
+              by
+              <a
+                href="https://dribbble.com/reng1sed"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Sam Halpert</a
+              >.
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="./pages/fintech/index.html">
+              <button class="secondary">
+                <span>browse</span>
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </a>
+            <a
+              href="https://github.com/prajeshElEvEn/pixel-playground/tree/master/pages/fintech"
+            >
+              <button class="secondary">
+                <span>code</span>
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img
+              src="https://cdn.dribbble.com/userupload/13373084/file/original-339c668cb7d62c30b229e75ded1fe821.png?resize=1024x768&vertical=center"
+              alt="NFT Creator Web Platform"
+            />
+            <h4>NFT Creator Web Platform</h4>
+            <p>
+              <a
+                href="https://dribbble.com/shots/23753204-NFT-Creator-Web-Platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NFT Creator Web Platform UI</a
+              >
+              by
+              <a
+                href="https://dribbble.com/sergeypurrweb"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Sergey Nikonenko</a
+              >.
+            </p>
+          </div>
+          <div class="btn-group">
+            <a href="./pages/nft-creator/index.html">
+              <button class="secondary">
+                <span>browse</span>
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </a>
+            <a
+              href="https://github.com/prajeshElEvEn/pixel-playground/tree/master/pages/nft-creator"
+            >
+              <button class="secondary">
+                <span>code</span>
+                <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          &copy; <span id="year"></span>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >eleven.co</a
+          >
+        </p>
+      </footer>
     </div>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
