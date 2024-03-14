@@ -1,1 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
 
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: "Mulish", sans-serif
+    background: #E7EBDB
+    color: #414119
+
+.container
+    width: 70%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    gap: 4rem
+
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 1rem 0
+        border-bottom: 1px solid #41411910
+
+        .brand
+            font-size: 1.6rem
+            font-weight: 800
+
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            gap: 1rem
+            font-weight: 600
+            li
+                display: flex
+                align-items: center
+                gap: 0.2rem
+    main
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        margin-bottom: 4rem
+        .heading
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 1rem
+
+        .cards
+            display: flex
+            justify-content: flex-end
+            gap: 1rem
+            .card
+                width: 18%
+                border-radius: 30px
+                background: #fff
+                .card-img
+                    width: 100%
+                    height: 240px
+                    aspect-ratio: 1
+                    border-radius: 30px 30px 0 0
+                .card-content
+                    padding: 1rem
+                    .card-title
+                        color: #414119
+                        font-size: 1.4rem
+                        font-weight: 800
+
+button
+    font-family: "Mulish", sans-serif
+    font-size: 1rem
+    font-weight: 600
+    border: 2px solid #414119
+    border-width: 2px 8px 2px 2px
+    display: flex
+    align-items: center
+    gap: 0.2rem
+    border-radius: 50px
+    padding: 0.4rem 0.8rem
+    background: #E5ECDB
+    cursor: pointer
+
+.title
+    font-weight: 800
+    font-size: 7rem
+
+.row
+    display: flex
+    align-items: center
+    gap: 2rem
+
+.right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    gap: 1rem
+
+.avatar
+    width: 48px
+    height: 48px
+    border-radius: 50px
+    border: 2px solid #414119
+
+.one
+    transform: translateX(-20px)
+.two
+    transform: translateX(-40px)
+
+.top
+    display: flex
+
+.stats
+    transform: translateX(-20px)
+
+.sub-title
+    font-size: 1.2rem
+    font-weight: 800
+
+p
+    color: #A4A48B
